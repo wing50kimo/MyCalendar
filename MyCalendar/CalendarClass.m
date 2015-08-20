@@ -16,7 +16,7 @@
 {
     self = [super initWithFrame:frame];
     
-    NSLog(@"x:%f y:%f w:%f h:%f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+    //NSLog(@"x:%f y:%f w:%f h:%f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
     
     if (self)
     {
