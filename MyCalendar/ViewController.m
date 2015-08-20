@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+        
+    CalendarClass *calendar = [[CalendarClass alloc] initWithFrame:CGRectMake(0,
+                                                                              [UIScreen mainScreen].bounds.size.height/2,
+                                                                              [UIScreen mainScreen].bounds.size.width,
+                                                                              [UIScreen mainScreen].bounds.size.height/2)];
+    
+    //CalendarClass *calendar = [[CalendarClass alloc] initWithFrame:CGRectMake(0,20, 200, 200)];
+    
+    [self.view addSubview:calendar];
+    
+    [calendar createCalendar];
 }
 
 - (void)didReceiveMemoryWarning {

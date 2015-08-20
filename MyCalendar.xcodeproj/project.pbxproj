@@ -15,6 +15,13 @@
 		ACC745F51B8308B80043643F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC745F41B8308B80043643F /* Images.xcassets */; };
 		ACC745F81B8308B80043643F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC745F61B8308B80043643F /* LaunchScreen.xib */; };
 		ACC746041B8308B80043643F /* MyCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC746031B8308B80043643F /* MyCalendarTests.m */; };
+		ACC7460F1B8308FB0043643F /* CalendarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC7460E1B8308FB0043643F /* CalendarClass.m */; };
+		ACFF9FE01B84252900D2B50A /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FDC1B84252900D2B50A /* green.png */; };
+		ACFF9FE11B84252900D2B50A /* highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FDD1B84252900D2B50A /* highlight.png */; };
+		ACFF9FE21B84252900D2B50A /* lightgray.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FDE1B84252900D2B50A /* lightgray.png */; };
+		ACFF9FE31B84252900D2B50A /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FDF1B84252900D2B50A /* white.png */; };
+		ACFF9FE61B84613F00D2B50A /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FE41B84613F00D2B50A /* next.png */; };
+		ACFF9FE71B84613F00D2B50A /* pre.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFF9FE51B84613F00D2B50A /* pre.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,14 @@
 		ACC745FD1B8308B80043643F /* MyCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC746021B8308B80043643F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC746031B8308B80043643F /* MyCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCalendarTests.m; sourceTree = "<group>"; };
+		ACC7460D1B8308FB0043643F /* CalendarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarClass.h; sourceTree = "<group>"; };
+		ACC7460E1B8308FB0043643F /* CalendarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarClass.m; sourceTree = "<group>"; };
+		ACFF9FDC1B84252900D2B50A /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		ACFF9FDD1B84252900D2B50A /* highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlight.png; sourceTree = "<group>"; };
+		ACFF9FDE1B84252900D2B50A /* lightgray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightgray.png; sourceTree = "<group>"; };
+		ACFF9FDF1B84252900D2B50A /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		ACFF9FE41B84613F00D2B50A /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		ACFF9FE51B84613F00D2B50A /* pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +102,9 @@
 				ACC745E91B8308B80043643F /* AppDelegate.m */,
 				ACC745EE1B8308B80043643F /* ViewController.h */,
 				ACC745EF1B8308B80043643F /* ViewController.m */,
+				ACC7460D1B8308FB0043643F /* CalendarClass.h */,
+				ACC7460E1B8308FB0043643F /* CalendarClass.m */,
+				ACFF9FE81B847EF300D2B50A /* Pictures */,
 				ACC745F11B8308B80043643F /* Main.storyboard */,
 				ACC745F41B8308B80043643F /* Images.xcassets */,
 				ACC745F61B8308B80043643F /* LaunchScreen.xib */,
@@ -120,6 +138,19 @@
 				ACC746021B8308B80043643F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACFF9FE81B847EF300D2B50A /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF9FDC1B84252900D2B50A /* green.png */,
+				ACFF9FDD1B84252900D2B50A /* highlight.png */,
+				ACFF9FDE1B84252900D2B50A /* lightgray.png */,
+				ACFF9FDF1B84252900D2B50A /* white.png */,
+				ACFF9FE41B84613F00D2B50A /* next.png */,
+				ACFF9FE51B84613F00D2B50A /* pre.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC745F31B8308B80043643F /* Main.storyboard in Resources */,
+				ACFF9FE01B84252900D2B50A /* green.png in Resources */,
+				ACFF9FE61B84613F00D2B50A /* next.png in Resources */,
 				ACC745F81B8308B80043643F /* LaunchScreen.xib in Resources */,
 				ACC745F51B8308B80043643F /* Images.xcassets in Resources */,
+				ACFF9FE11B84252900D2B50A /* highlight.png in Resources */,
+				ACFF9FE71B84613F00D2B50A /* pre.png in Resources */,
+				ACFF9FE31B84252900D2B50A /* white.png in Resources */,
+				ACFF9FE21B84252900D2B50A /* lightgray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +261,7 @@
 			files = (
 				ACC745EA1B8308B80043643F /* AppDelegate.m in Sources */,
 				ACC745E71B8308B80043643F /* main.m in Sources */,
+				ACC7460F1B8308FB0043643F /* CalendarClass.m in Sources */,
 				ACC745F01B8308B80043643F /* ViewController.m in Sources */,
 				ACC745ED1B8308B80043643F /* MyCalendar.xcdatamodeld in Sources */,
 			);
@@ -352,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,6 +460,7 @@
 				ACC746091B8308B80043643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACC7460A1B8308B80043643F /* Build configuration list for PBXNativeTarget "MyCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +469,7 @@
 				ACC7460C1B8308B80043643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

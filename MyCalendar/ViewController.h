@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalendarClass.h"
 
 @interface ViewController : UIViewController
 
